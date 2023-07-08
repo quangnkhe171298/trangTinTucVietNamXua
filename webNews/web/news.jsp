@@ -16,7 +16,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.webmanifest">
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
         <link rel="stylesheet" href="assets/css/slicknav.css">
@@ -63,10 +62,10 @@
                                         <ul id="navigation">
                                             <li><a href="newslist">Home</a></li>
                                             <li><a href="about.html">About</a></li>
-                                            <li><a href="newslist">Blog</a>
+                                            <li><a href="news">News</a>
                                                 <ul class="submenu">
-                                                    <li><a href="news">Blog</a></li>
-                                                    <li><a href="blog_details.html">Blog Details</a></li>
+                                                    <li><a href="news">All News</a></li>
+                                                    <li><a href="blog_details.html">News Details</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
@@ -128,7 +127,7 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
                                     <li class="breadcrumb-item"><a href="newslist">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="news">Blog</a></li>
+                                    <li class="breadcrumb-item"><a href="news">All News</a></li>
                                 </ol>
                             </nav>
                         </div>
@@ -222,7 +221,7 @@
                                                 </a>
                                                 <p>${o.timePost}</p>
                                             </div>
-                                        </div
+                                        </div>
                                     </c:forEach>
                                 </aside>
 
