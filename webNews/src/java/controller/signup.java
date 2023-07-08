@@ -112,7 +112,6 @@ public class signup extends HttpServlet {
             User account = new User(user, pass, fullname, 2);
             if (a == null) {
                 dao.insertAccount(account);
-                response.sendRedirect("home.jsp");
             } else {
                 request.setAttribute("a", 1);
                 request.setAttribute("user2", user);
