@@ -67,10 +67,10 @@
                                         <ul id="navigation">
                                             <li><a href="newslist">Home</a></li>
                                             <li><a href="about.html">About</a></li>
-                                            <li><a href="newslist">Blog</a>
+                                            <li><a href="news">News</a>
                                                 <ul class="submenu">
-                                                    <li><a href="news">Blog</a></li>
-                                                    <li><a href="blog_details.html">Blog Details</a></li>
+                                                    <li><a href="news">News</a></li>
+                                                    <li><a href="blog_details.html">News Details</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
@@ -179,7 +179,7 @@
                                     <div class="col-xl-8 col-lg-9">
 
                                         <div class="hero__caption">
-                                            <h1>news<br>everyday<br>always</h1>
+                                            <h1>back<br>to<br>history</h1>
                                             <a href="#" class="btn">Read Now</a>
                                         </div>
                                     </div>
@@ -195,7 +195,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <c:forEach var="o" items="${listC}">
-                            <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="single-popular-items mb-50 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                                     <div class="popular-img">
                                         <img src="${o.image}" alt="">
@@ -242,7 +242,7 @@
                                         <img src="${o.image}" alt="">
                                     </div>
                                     <div class="location-details">
-                                        <p><a href="detail?id=${o.id}">${o.title}</a></p>
+                                        <p><a style="color: white" href="detail?id=${o.id}">${o.title}</a></p>
                                         <a href="detail?id=${o.id}" class="btn">Read More</a>
                                     </div>
                                 </div>
@@ -255,56 +255,7 @@
             </div>
 
 
-            <div class="categories-area section-padding40 gray-bg">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                                <div class="cat-icon">
-                                    <img src="assets/img/icon/services1.svg" alt="">
-                                </div>
-                                <div class="cat-cap">
-                                    <h5>Fast & Free Delivery</h5>
-                                    <p>Free delivery on all orders</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                                <div class="cat-icon">
-                                    <img src="assets/img/icon/services2.svg" alt="">
-                                </div>
-                                <div class="cat-cap">
-                                    <h5>Fast & Free Delivery</h5>
-                                    <p>Free delivery on all orders</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="single-cat mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                                <div class="cat-icon">
-                                    <img src="assets/img/icon/services3.svg" alt="">
-                                </div>
-                                <div class="cat-cap">
-                                    <h5>Fast & Free Delivery</h5>
-                                    <p>Free delivery on all orders</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="single-cat wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                                <div class="cat-icon">
-                                    <img src="assets/img/icon/services4.svg" alt="">
-                                </div>
-                                <div class="cat-cap">
-                                    <h5>Fast & Free Delivery</h5>
-                                    <p>Free delivery on all orders</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
         </main>
         <footer>
@@ -317,11 +268,11 @@
                                 <div class="single-footer-caption mb-30">
 
                                     <div class="footer-logo mb-35">
-                                        <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                                        <a href="index.html" style="color: white">vietnamxua.net</a>
                                     </div>
                                     <div class="footer-tittle">
                                         <div class="footer-pera">
-                                            <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+                                            <p>The fragrance conveys the ancient beauty.</p>
                                         </div>
                                     </div>
 
@@ -333,54 +284,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Quick links</h4>
-                                    <ul>
-                                        <li><a href="#">Image Licensin</a></li>
-                                        <li><a href="#">Style Guide</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Shop Category</h4>
-                                    <ul>
-                                        <li><a href="#">Image Licensin</a></li>
-                                        <li><a href="#">Style Guide</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Pertners</h4>
-                                    <ul>
-                                        <li><a href="#">Image Licensin</a></li>
-                                        <li><a href="#">Style Guide</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Get in touch</h4>
-                                    <ul>
-                                        <li><a href="#">(89) 982-278 356</a></li>
-                                        <li><a href="#"><span class="__cf_email__" data-cfemail="086c6d6567486b6764677a64616a266b6765">[email&#160;protected]</span></a></li>
-                                        <li><a href="#">67/A, Colorlib, Green road, NYC</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -392,7 +296,7 @@
                             <div class="col-xl-12 ">
                                 <div class="footer-copy-right text-center">
                                     <p>
-                                        Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                        Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> vietnamxua</a>
                                     </p>
                                 </div>
                             </div>
