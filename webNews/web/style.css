@@ -1,0 +1,133 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 8, 2023, 3:21:01 PM
+    Author     : kiemq
+*/
+a, button {
+    color: black;
+    outline: medium none;
+}
+.header-right1 .card-stor {
+    background: black;
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.blog_item_img .blog_item_date {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    display: block;
+    color: #fff;
+    background-color: #000000;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.boxed-btn {
+    background: #fff;
+    color: #000000 !important;
+    display: inline-block;
+    padding: 18px 44px;
+    font-family: "Cinzel",serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid #000000;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#back-top {
+    background: #ffffff;
+    height: 50px;
+    width: 50px;
+    right: 31px;
+    bottom: 18px;
+    position: fixed;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 48px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 3px rgba(108,98,98,0.2);
+}
+
+.footer-area {
+    background: #000000;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.footer-bottom-area {
+    background: #ffffff;
+}
+
+.preloader .preloader-circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: #000000;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(35,181,185,0.15);
+    box-shadow: 0 1px 5px 0 rgba(35,181,185,0.15);
+    background-color: #fff;
+    -webkit-animation: zoom 2000ms infinite ease;
+    animation: zoom 2000ms infinite ease;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+}
+
+.slider-bg1{background-image:url(assets/img/hero/slide1.jpg)}
+.slider-bg2{background-image:url(assets/img/hero/slide2.jpg)}
+.slider-bg3{background-image:url(assets/img/hero/slide3.jpg)}
+
+.slider-area .hero__caption h1 {
+    font-size: 120px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    text-transform: normal;
+    color: #fff;
+    line-height: 120px;
+    margin-bottom: 39px;
+    font-family: 'Poppins';
+}
+
+.btn {
+    background: #000000;
+    text-transform: capitalize;
+    padding: 27px 44px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-block;
+    line-height: 1;
+    -moz-user-select: none;
+    letter-spacing: 1px;
+    line-height: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+    margin: 0;
+    border-radius: 4px;
+}
