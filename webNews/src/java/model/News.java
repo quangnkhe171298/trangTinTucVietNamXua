@@ -39,7 +39,7 @@ public class News {
         this.shortDes = shortDes;
         this.categoryId = categoryId;
     }
-
+    
     public News(int id, String title, String description, String image, int authorId, String timePost, String shortDes, int categoryId, User user) {
         this.id = id;
         this.title = title;
@@ -128,7 +128,7 @@ public class News {
 
     public Category getCategory() {
         return category;
-    }
+}
 
     public void setCategory(Category category) {
         this.category = category;
