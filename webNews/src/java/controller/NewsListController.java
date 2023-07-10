@@ -66,9 +66,9 @@ public class NewsListController extends HttpServlet {
          CategoryDao cdao = new CategoryDao();
         List<Category> listC = cdao.getAllCategorys();
         News news = dao.getNewsById("4");
-        List<News> top2 = dao.getTop2News();
+        List<News> top4 = dao.getTop4News();
          req.setAttribute("news", news);
-         req.setAttribute("top2", top2);
+         req.setAttribute("top4", top4);
         req.setAttribute("listC", listC);
         
         req.getRequestDispatcher("home.jsp").forward(req, resp);
