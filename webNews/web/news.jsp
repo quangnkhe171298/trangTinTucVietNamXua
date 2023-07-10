@@ -65,7 +65,9 @@
                                             <li><a href="news">News</a>
                                                 <ul class="submenu">
                                                     <li><a href="news">All News</a></li>
-                                                    <li><a href="blog_details.html">News Details</a></li>
+                                                    <c:forEach var="c" items="${listC}">
+                                                            <li><a href="newsByCategory?id=${c.id}">${c.name}</a></li>
+                                                    </c:forEach>
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
@@ -198,7 +200,7 @@
                                             <c:forEach var="o" items="${listC}">
                                                 <li>
                                                     <input hidden name="choices-single-default" value="${o.id}"> 
-                                                    <a href="#" class="d-flex">
+                                                    <a href="newsByCategory?id=${o.id}" class="d-flex">
                                                         <p>${o.name}</p>
                                                     </a>
                                                 </li>
