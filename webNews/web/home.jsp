@@ -69,8 +69,10 @@
                                             <li><a href="about.html">About</a></li>
                                             <li><a href="news">News</a>
                                                 <ul class="submenu">
-                                                    <li><a href="news">News</a></li>
-                                                    <li><a href="blog_details.html">News Details</a></li>
+                                                    <li><a href="news">All News</a></li>
+                                                        <c:forEach var="c" items="${listC}">
+                                                            <li><a href="newsByCategory?id=${c.id}">${c.name}</a></li>
+                                                        </c:forEach>
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
@@ -152,7 +154,7 @@
 
                                         <div class="hero__caption">
                                             <h1>vietnam<br>ancient<br>days</h1>
-                                            <a href="#" class="btn">Read Now</a>
+                                            <a href="news" class="btn">Read Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -166,7 +168,7 @@
 
                                         <div class="hero__caption">
                                             <h1>news<br>everyday<br>always</h1>
-                                            <a href="#" class="btn">Read Now</a>
+                                            <a href="news" class="btn">Read Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -180,7 +182,7 @@
 
                                         <div class="hero__caption">
                                             <h1>back<br>to<br>history</h1>
-                                            <a href="#" class="btn">Read Now</a>
+                                            <a href="news" class="btn">Read Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -203,7 +205,7 @@
                                             <span>${o.name}</span>
                                         </div>
                                         <div class="favorit-items">
-                                            <a href="detail?id=${o.id}" class="btn">Read Now</a>
+                                            <a href="newsByCategory?id=${o.id}" class="btn">Read Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -235,7 +237,7 @@
             <div class="popular-product pt-50">
                 <div class="container-fluid">
                     <div class="row">
-                        <c:forEach var="o" items="${top2}">
+                        <c:forEach var="o" items="${top4}">
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="single-product mb-50">
                                     <div class="location-img">
