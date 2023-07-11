@@ -12,9 +12,11 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.util.List;
 import model.Category;
 import model.News;
+import model.User;
 
 /**
  *
@@ -66,7 +68,14 @@ public class AdminNews extends HttpServlet {
         List<Category> listC = cdao.getAllCategorys();
         request.setAttribute("newslist", newslist);
         request.setAttribute("listC", listC);
+        HttpSession session= request.getSession();
+        User ac = (User)session.getAttribute("account");
+        int role_id = ac.getRoles();
+        if(ac != null && role_id == 1){
         request.getRequestDispatcher("NewsAdmin.jsp").forward(request, response);
+        }else{
+            request.getRequestDispatcher("login.jsp").forward(request, response);
+        }
     }
 
     /**
