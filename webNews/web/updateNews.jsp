@@ -106,14 +106,14 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-lg-3 col-sm-6 col-12">
+                                    <div class="col-lg-12 col-sm-6 col-12">
                                         <div class="form-group">
                                             <label>Title</label>
                                             <input value="${s.title}" name="title" type="text">
                                         </div>
                                     </div>
                                             <input hidden value="${s.id}" name="id" type="text">
-                                    <div class="col-lg-3 col-sm-6 col-12">
+                                    <div class="col-lg-12 col-sm-6 col-12">
                                         <div class="form-group">
                                             <label>Category</label>
                                             <select name="category" class="select">
@@ -125,22 +125,22 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 col-sm-6 col-12">
+                                    <div class="col-lg-12 col-sm-6 col-12">
                                         <div class="form-group">
                                             <label>Image</label>
                                             <input value="${s.image}"  name="image"type="text">
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 col-sm-6 col-12">
+                                    <div class="col-lg-12 col-sm-6 col-12">
                                         <div class="form-group">
                                             <label>Description</label>
-                                            <input value="${s.description}" name="description" type="text">
+                                            <textarea  rows="10" cols="50" name="description">${s.description}</textarea>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 col-sm-6 col-12">
+                                    <div class="col-lg-12 col-sm-6 col-12">
                                         <div class="form-group">
                                             <label>Shortdes</label>
-                                            <input value="${s.shortDes}" name="shortdes" type="text">
+                                            <textarea rows="10" cols="50" name="shortdes">${s.shortDes}</textarea>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">

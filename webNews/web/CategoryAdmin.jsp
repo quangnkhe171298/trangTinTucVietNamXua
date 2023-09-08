@@ -90,6 +90,7 @@
                                 <ul>
                                     <li><a href="admin" >News List</a></li>
                                     <li><a href="AdminCategory" class="active">Category List</a></li>
+                                    <li><a href="accountmanagement">Account List</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -151,7 +152,7 @@
                                                     <a class="me-3" href="updateCategory?idd=${o.id}">
                                                         <img src="adminassets/img/icons/edit.svg" alt="img">
                                                     </a>
-                                                    <a class="confirm-text" href="deleteCategory?idd=${o.id}">
+                                                    <a class="confirm-text" onclick="mess(${o.id})">
                                                         <img src="adminassets/img/icons/delete.svg" alt="img">
                                                     </a>
                                                 </td>
@@ -168,6 +169,15 @@
                 </div>
             </div>
         </div>
+        
+        <script>
+            function mess(id){
+                confirmation = confirm('Are you sure to delete?');
+                if(confirmation===true){
+                    window.location.href = 'deleteCategory?idd=' + id;
+                }
+            }
+        </script>
 
 
         <script src="adminassets/js/jquery-3.6.0.min.js"></script>

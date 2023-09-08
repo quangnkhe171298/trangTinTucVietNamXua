@@ -7,6 +7,8 @@ package dal;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.User;
@@ -94,6 +96,7 @@ public class UserDao extends DBContext{
                 a.setId(rs.getInt(1));
                 a.setUsername(rs.getString(2));
                 a.setPassword(rs.getString(3));
+                a.setRoles(rs.getInt(4));
                 a.setFullname(rs.getString(5));
 
                 return a;
@@ -102,5 +105,56 @@ public class UserDao extends DBContext{
         }
         return null;
 
+    }
+    
+    public List<User> getFullUser() {
+        List<User> list = new ArrayList<>();
+        try {
+            String sql = "SELECT * FROM Users";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            ResultSet rs = statement.executeQuery();
+            while (rs.next()) {
+                User r = new User();
+                r.setId(rs.getInt(1));
+                r.setUsername(rs.getString(2));
+                r.setPassword(rs.getString(3));
+                r.setRoles(rs.getInt(4));
+                r.setFullname(rs.getString(5));              
+                list.add(r);
+            }
+        } catch (Exception e) {
+        }
+        return list;
+
+    }
+    
+    public void updateAccount(User s) {
+        try {
+            String sql = "UPDATE [dbo].[Users]\n"
+                    + "   SET [username] = ?\n"
+                    + "      ,[password] = ?\n"
+                    + "      ,[roleId] = ?\n"
+                    + "      ,[fullname] = ?\n"
+                    + " WHERE id = ?";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setString(1, s.getUsername());
+            statement.setString(2, s.getPassword());
+            statement.setInt(3, s.getRoles());
+            statement.setString(4, s.getFullname());
+            statement.setInt(5, s.getId());
+            statement.executeUpdate();
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDao.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public void deleteAccount(int id) {
+        try {
+            String sql = "DELETE Users WHERE id=?";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setInt(1, id);
+            statement.executeUpdate();
+        } catch (SQLException ex) {
+        }
     }
 }

@@ -71,7 +71,7 @@ public class AdminNews extends HttpServlet {
         HttpSession session= request.getSession();
         User ac = (User)session.getAttribute("account");
         int role_id = ac.getRoles();
-        if(ac != null && role_id == 1){
+        if(ac != null && role_id == 1||role_id ==3){
         request.getRequestDispatcher("NewsAdmin.jsp").forward(request, response);
         }else{
             request.getRequestDispatcher("login.jsp").forward(request, response);
